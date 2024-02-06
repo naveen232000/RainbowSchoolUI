@@ -1,0 +1,28 @@
+﻿body {
+    background-color:lightyellow;
+ 
+}
+.top{
+    position:absolute;
+    left:2%;
+    right:2%;
+    top:2%;
+    width:96%;
+    height:20%;
+    background-color:lightcyan;
+    color:darkblue
+
+}
+.middle {
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    top:24%;
+    width: 96%;
+    height: 84%;
+    background-color: white;
+    color: darkblue
+}
+h1{
+    text-align:center;
+}

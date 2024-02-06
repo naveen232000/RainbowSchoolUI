@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="RainbowSchool.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Style.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 1475px;
+        }
+        .auto-style7 {
+            width: 294px;
+        }
+        .auto-style8 {
+            width: 295px;
+        }
+        .auto-style9 {
+            width: 294px;
+            height: 7px;
+        }
+        .auto-style10 {
+            width: 295px;
+            height: 7px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="top">
+            <table class="auto-style1">
+                <tr>
+                    <td colspan="5"><h1>Rainbow School</h1></td>
+                </tr>
+                <tr>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style10"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style7">
+                        <asp:Button ID="Button1" runat="server" Text="Home" OnClick="Button1_Click" />
+                    </td>
+                   
+                    <td class="auto-style8">
+                        <asp:Button ID="ButtonSubject" runat="server" Text="Subject" OnClick="ButtonSubject_Click" />
+                    </td>
+                    <td class="auto-style8">
+                        <asp:Button ID="Student" runat="server" Text="Student" OnClick="Student_Click" />
+                    </td>
+                    <td class="auto-style8">
+                        <asp:Button ID="ButtonClass" runat="server" OnClick="ButtonClass_Click1" Text="Class" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="middle">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <h1>
+                    Welcome to Rainbow School</h1>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
